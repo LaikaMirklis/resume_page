@@ -6,10 +6,10 @@ body {
 
 .wrapper {
   display: flex;
+  flex-shrink: 0;
   flex-direction: row-reverse;
   background-color: #ffffff;
   width: 1200px;
-  height: 1319px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin: 0 auto;
 }
@@ -172,11 +172,15 @@ body {
 .sidebar {
   background: #e0ebfe;
   margin: 0;
-  width: 370px;
 }
 
 .my-photo {
   margin-top: 40px;
+}
+ 
+.sidebar-content{
+  padding: 0;
+  margin: 0;
 }
 
 .contacts-container,
@@ -226,6 +230,11 @@ body {
 }
 
 /* Tech  & Soft skills containers */
+.skills-row {
+  margin: 0;
+  padding: 0;
+}
+
 .sidebar-list {
   margin: 0 ;
   padding: 0;
@@ -246,4 +255,81 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
+}
+
+/* Adaptive size */
+@media screen and (max-width: 1270px) {
+  .wrapper {
+    width: 100%;
+  }
+  .my-descr {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 995px) {
+  .main-content {
+    padding: 40px;
+  }
+  .my-photo {
+    width: 275px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    flex-direction: column-reverse;
+  }
+  .sidebar {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px 20px  0 20px;
+  }
+  .sidebar-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .my-photo {
+    margin: 0;
+  }
+  .contacts-container, .skills-container {
+    margin: 0 0 20px 20px;
+  }
+  .sidebar-title {
+    margin: 0 0 0 10px;
+  }
+  .skills-row {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 680px) { 
+  body {
+    padding: 0;
+  }
+  .sidebar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .my-photo {
+    margin-bottom: 20px;
+    width: 350px;
+  }
+  .sidebar-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) { 
+  .main-content {
+    padding: 40px 16px 40px 16px;
+  }
+  .skills-row {
+    flex-direction: column;
+  }
+  .sidebar-content {
+    align-items: flex-start;
+  }
 }
