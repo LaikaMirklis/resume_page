@@ -62,69 +62,21 @@ body {
 }
 
 /* My projects */
-.sourse-item {
-  margin: 0;
-  padding: 0;
-}
-
-.sourse-item li {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: #595959;
-  margin-left: 16px;
-}
-
-.sourse-item li a {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  text-decoration-line: underline;
-  color: #005fff;
-  margin-left: 12px;
-}
-
-.sourse-item li::marker {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 24px;
-  color: #000000;
-}
-.projects-container {
-  margin-bottom: 48px;
-}
-
-/* Work Experience */
-.company-position {
+.project-name {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  color: #000000;
+  color: #6d9bf5;
   margin: 12px 0 12px 0;
 }
 
-.company-name {
-  color: #6d9bf5;
-}
-
-.work-period {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  color: #a8a8a8;
-  margin-bottom: 8px;
-}
-
-.company-duties {
+.project-description {
   margin: 0;
   padding: 0;
 }
 
-.company-duties li {
+.project-description li {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -134,11 +86,19 @@ body {
   margin-left: 16px;
 }
 
-.work-place-container {
- margin-bottom: 16px;
+.project-description li a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration-line: underline;
+  color: #005fff;
 }
 
-.work-experience-container {
+.project-container {
+  margin-bottom: 16px;
+}
+
+.projects-container {
   margin-bottom: 44px;
 }
 
@@ -177,8 +137,8 @@ body {
 .my-photo {
   margin-top: 40px;
 }
- 
-.sidebar-content{
+
+.sidebar-content {
   padding: 0;
   margin: 0;
 }
@@ -236,7 +196,7 @@ body {
 }
 
 .sidebar-list {
-  margin: 0 ;
+  margin: 0;
   padding: 0;
 }
 
@@ -283,7 +243,7 @@ body {
   .sidebar {
     display: flex;
     align-items: flex-start;
-    padding: 20px 20px  0 20px;
+    padding: 20px 20px 0 20px;
   }
   .sidebar-content {
     display: flex;
@@ -292,7 +252,8 @@ body {
   .my-photo {
     margin: 0;
   }
-  .contacts-container, .skills-container {
+  .contacts-container,
+  .skills-container {
     margin: 0 0 20px 20px;
   }
   .sidebar-title {
@@ -304,7 +265,7 @@ body {
   }
 }
 
-@media screen and (max-width: 680px) { 
+@media screen and (max-width: 680px) {
   body {
     padding: 0;
   }
@@ -322,7 +283,7 @@ body {
   }
 }
 
-@media screen and (max-width: 480px) { 
+@media screen and (max-width: 480px) {
   .main-content {
     padding: 40px 16px 40px 16px;
   }
