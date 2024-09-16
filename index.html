@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
 
     <link rel="stylesheet" href="./css/style.css" />
 
@@ -19,138 +23,318 @@
     <!-- Wrapper -->
     <div class="wrapper">
       <!-- Main content -->
-      <div class="main-content">
-        <!-- About me -->
-        <div class="about-me-container">
-          <h2 class="my-profession">Front-End Developer</h2>
-          <h1 class="my-name">Olga Prokopchuk</h1>
-
-          <p class="my-descr">
-            Aspiring junior front-end developer passionate about web development
-            and eager to contribute to dynamic projects while continuously
-            learning and growing in the field.
-          </p>
+      <div class="main-content-wrapper">
+        <!-- Language switcher -->
+        <div class="language-switcher">
+          <span class="eng">Eng</span>
+          <input type="checkbox" class="switcher" checked />
+          <span class="ukr">Ukr</span>
         </div>
 
-        <!-- My projects -->
-        <div class="projects-container">
-          <h3 class="main-content-title">Author's projects</h3>
+        <!-- Main content  (English version) -->
+        <div class="main-content eng hidden">
+          <!-- About me -->
+          <div class="about-me-container">
+            <h2 class="my-profession">Entry Level Front End Developer</h2>
+            <h1 class="my-name">Olga Prokopchuk</h1>
 
-          <!-- Project 1 -->
-          <div class="project-container">
-            <h4 class="project-name">Portfolio Website</h4>
-            <ul class="project-description">
-              <li>
-                <b>Description:</b> Created a personal portfolio website to
-                showcase web development skills and projects.
-              </li>
-              <li><b>Technologies Used:</b> HTML5, CSS3</li>
-              <li>
-                <b>Role:</b> Designed and coded the website, optimized for
-                mobile devices.
-              </li>
-              <li>
-                <b>Outcomes:</b> Improved coding skills and created a
-                professional online presence.
-              </li>
-              <li>
-                <b>URL:</b>
-                <a href="https://sage-fairy-39df6e.netlify.app/"
-                  >https://sage-fairy-39df6e.netlify.app/</a
-                >
-              </li>
-            </ul>
+            <p class="my-descr">
+              Detail-oriented and motivated Front-End Developer with knowledge
+              of HTML, CSS, JavaScript, and React. Eager to apply technical
+              skills to create interactive and visually appealing user
+              interfaces. Seeking an opportunity for professional growth, to
+              contribute to engaging projects, and to collaborate with
+              experienced developers to deliver effective and user-friendly web
+              solutions.
+            </p>
           </div>
 
-          <!-- Project 2 -->
-          <div class="project-container">
-            <h4 class="project-name">Snake game</h4>
-            <ul class="project-description">
-              <li>
-                <b>Description:</b> Developed a classic Snake game using
-                JavaScript, offering a fun and interactive gaming experience.
-                Players control a snake that grows longer as it consumes food
-                while avoiding collisions with walls and its own tail.
-              </li>
-              <li><b>Technologies Used:</b> JavaScript, HTML5, CSS3</li>
-              <li>
-                <b>Role:</b> Sole developer responsible for designing, coding,
-                and testing the game. Implemented game mechanics, user
-                interface, and responsive design for various screen sizes.
-              </li>
-              <li>
-                <b>Outcomes:</b> Gained hands-on experience in game development
-                and JavaScript programming. Enhanced problem-solving skills
-                through game logic implementation. Improved understanding of
-                event handling for user input and animation.
-              </li>
-              <li>
-                <b>URL:</b>
-                <a href="https://laikamirklis.github.io/snake_game/"
-                  >https://laikamirklis.github.io/snake_game/</a
-                >
-              </li>
-            </ul>
+          <!-- My projects -->
+          <div class="projects-container">
+            <h3 class="main-content-title">Author's projects</h3>
+
+            <!-- Project 1 -->
+            <div class="project-container">
+              <h4 class="project-name">Portfolio Page</h4>
+              <ul class="project-description">
+                <li>
+                  <b>Description:</b> Personal portfolio page showcasing web
+                  development skills.
+                </li>
+                <li><b>Technologies Used:</b> JavaScript, HTML5, CSS3.</li>
+                <li>
+                  <b>Outcomes:</b> Enhanced coding skills and created a
+                  professional online portfolio.
+                </li>
+                <li>
+                  <b>URL:</b>
+                  <a href="https://laikamirklis.github.io/resume_page/">
+                    https://laikamirklis.github.io/resume_page/
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-container">
+              <h4 class="project-name">Snake game</h4>
+              <ul class="project-description">
+                <li>
+                  <b>Description:</b> Classic Snake game created using
+                  JavaScript.
+                </li>
+                <li><b>Technologies Used:</b> JavaScript, HTML5, CSS3.</li>
+                <li>
+                  <b>Outcomes:</b> Gained practical experience in JavaScript
+                  programming. Improved problem-solving and event handling
+                  skills.
+                </li>
+                <li>
+                  <b>URL:</b>
+                  <a href="https://laikamirklis.github.io/snake_game/">
+                    https://laikamirklis.github.io/snake_game/
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-container">
+              <h4 class="project-name">Social Network</h4>
+              <ul class="project-description">
+                <li>
+                  <b>Description:</b> A social networking platform that allows
+                  users to view profiles, subscribe/unsubscribe, and switch
+                  languages.
+                </li>
+                <li>
+                  <b>Technologies Used:</b> React JS, Redux (including Thunk and
+                  Reselect), API Integration (Axios), React Final Form, React
+                  Router, React Select, Emoji Mart, PropTypes, i18next, SCSS,
+                  CSS Modules.
+                </li>
+                <li>
+                  <b>Outcomes:</b> Developed a social networking site with user
+                  interaction capabilities. Gained initial experience with
+                  React, Redux, and API integration. Acquired skills in complex
+                  state management, routing, and form handling. Gained
+                  experience in migrating to modern technologies, including
+                  transitioning from Redux Form to React Final Form and from
+                  class components to functional components using hooks.
+                  Improved debugging skills using React and Browser Developer
+                  Tools.
+                </li>
+                <li>
+                  <b>URL:</b>
+                  <a href="https://laikamirklis.github.io/social_network/">
+                    https://laikamirklis.github.io/social_network/
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Education -->
+          <div>
+            <h3 class="main-content-title">Education</h3>
+
+            <h4 class="education-place">
+              National Technical University of Ukraine “Igor Sikorsky Kyiv
+              Polytechnic Institute”
+            </h4>
+            <p class="education-specialty">
+              Chemical Technology of Composite Materials
+            </p>
+            <p class="education-period">
+              September 2017 - December 2022 | Ukraine
+            </p>
           </div>
         </div>
 
-        <!-- Education -->
-        <div>
-          <h3 class="main-content-title">Education</h3>
+        <!-- Main content (Ukrainian version) -->
+        <div class="main-content ukr">
+          <!-- About me -->
+          <div class="about-me-container">
+            <h2 class="my-profession">Front-End розробниця-початківець</h2>
+            <h1 class="my-name">Ольга Прокопчук</h1>
 
-          <h4 class="education-place">
-            National Technical University of Ukraine “Igor Sikorsky Kyiv
-            Polytechnic Institute”
-          </h4>
-          <p class="education-specialty">
-            Chemical Technology of Composite Materials
-          </p>
-          <p class="education-period">
-            September 2017 - December 2022 | Ukraine
-          </p>
+            <p class="my-descr">
+              Уважна до деталей і вмотивована Front-End розробниця-початківець з
+              знаннями HTML, CSS, JavaScript і React. Прагну застосувати
+              технічні навички для створення інтерактивних і візуально
+              привабливих користувацьких інтерфейсів. Шукаю можливість
+              професійного зростання, участі в цікавих проєктах і співпраці з
+              досвідченими розробниками для реалізації ефективних і зручних
+              веб-рішень.
+            </p>
+          </div>
+
+          <!-- My projects -->
+          <div class="projects-container">
+            <h3 class="main-content-title">Авторські проекти</h3>
+
+            <!-- Project 1 -->
+            <div class="project-container">
+              <h4 class="project-name">Сторінка-портфоліо</h4>
+              <ul class="project-description">
+                <li>
+                  <b>Опис:</b> Персональна сторінка-портфоліо, що демонструє
+                  навички у веброзробці.
+                </li>
+                <li><b>Використані технології:</b> JavaScript, HTML5, CSS3.</li>
+                <li>
+                  <b>Результати:</b> Покращила навички кодування і створила
+                  професійне онлайн-портфоліо.
+                </li>
+                <li>
+                  <b>URL:</b>
+                  <a href="https://laikamirklis.github.io/resume_page/">
+                    https://laikamirklis.github.io/resume_page/
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-container">
+              <h4 class="project-name">Гра "Змійка"</h4>
+              <ul class="project-description">
+                <li>
+                  <b>Опис:</b> Класична гра "Змійка", створена за допомогою
+                  JavaScript.
+                </li>
+                <li><b>Використані технології:</b> JavaScript, HTML5, CSS3.</li>
+                <li>
+                  <b>Результати:</b> Отримала практичний досвід у програмуванні
+                  на JavaScript. Покращила навички вирішення проблем та обробки
+                  подій.
+                </li>
+                <li>
+                  <b>URL:</b>
+                  <a href="https://laikamirklis.github.io/snake_game/">
+                    https://laikamirklis.github.io/snake_game/
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-container">
+              <h4 class="project-name">Соціальна мережа</h4>
+              <ul class="project-description">
+                <li>
+                  <b>Опис:</b> Платформа соціальної мережі, яка дозволяє
+                  користувачам переглядати профілі, підписуватися/відписуватися
+                  та змінювати мову.
+                </li>
+                <li>
+                  <b>Використані технології:</b> React JS, Redux (включаючи
+                  Thunk і Reselect), API інтеграція (Axios), React Final Form,
+                  React Router, React Select, Emoji Mart, PropTypes, i18next,
+                  SCSS, CSS Modules.
+                </li>
+                <li>
+                  <b>Результати:</b> Розробила сайт соціальної мережі з
+                  можливістю взаємодії користувачів. Отримала перший досвід
+                  роботи з React, Redux та інтеграцією API. Набула навичок у
+                  складному управлінні станом, маршрутизації та обробці форм.
+                  Отримала досвід міграції на сучасні технології, включаючи
+                  перехід від Redux Form до React Final Form та від класових
+                  компонентів до функціональних з використанням хуків. Покращила
+                  навички знаходження і усунення помилок за допомогою React і
+                  Browser Developer Tools.
+                </li>
+                <li>
+                  <b>URL:</b>
+                  <a href="https://laikamirklis.github.io/social_network/">
+                    https://laikamirklis.github.io/social_network/
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Education -->
+          <div>
+            <h3 class="main-content-title">Освіта</h3>
+
+            <h4 class="education-place">
+              Національний технічний університет України "Київський
+              політехнічний інститут імені Ігоря Сікорського"
+            </h4>
+            <p class="education-specialty">
+              Хімічна технологія композиційних матеріалів
+            </p>
+            <p class="education-period">
+              Вересень 2017 - Грудень 2022 | Україна
+            </p>
+          </div>
         </div>
       </div>
 
-      <!-- Sidebar -->
-      <aside class="sidebar">
-        <img
-          src="./img/photo.jpg"
-          alt="my photo"
-          width="370px"
-          class="my-photo"
-        />
-
-        <div class="sidebar-content">
-          <!-- Contacts -->
+      <!-- Sidebar (English version) -->
+      <aside class="sidebar eng hidden">
+        <!-- Contacts -->
+        <div class="contacts-wrapper">
+          <img
+            src="./img/photo_eng.jpg"
+            alt="my photo"
+            width="370px"
+            class="my-photo"
+          />
           <div class="contacts-container">
             <h3 class="sidebar-title">Contacts</h3>
 
             <p class="contacts-item">
-              <span class="contacts-type">C:</span>
-              <a href="tel:+380985584801" class="contacts-number"
-                >+38 098 558 48 01</a
-              >
+              <span class="contacts-type black">
+                <i class="fas fa-phone-alt"></i>
+              </span>
+              <a href="tel:+380635476034" class="contacts-email">
+                +38 063 547 60 34
+              </a>
             </p>
             <p class="contacts-item">
-              <span class="contacts-type">E:</span>
-              <a href="mailto:olg.beam763@gmail.com" class="contacts-email"
-                >olg.beam763@gmail.com</a
-              >
+              <span class="contacts-type black">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <a href="mailto:o.o.prokopchuk@gmail.com" class="contacts-email">
+                o.o.prokopchuk@gmail.com
+              </a>
+            </p>
+            <p class="contacts-item">
+              <span class="contacts-type">
+                <i class="fab fa-telegram"></i>
+              </span>
+              <a href="https://t.me/o_O_Prokopchuk" class="contacts-email">
+                t.me/o_O_Prokopchuk
+              </a>
+            </p>
+
+            <p class="contacts-item">
+              <span class="contacts-type">
+                <i class="fab fa-github"></i>
+              </span>
+              <a href="https://github.com/LaikaMirklis" class="contacts-email">
+                github.com/LaikaMirklis
+              </a>
             </p>
           </div>
+        </div>
 
+        <div class="sidebar-content">
           <div class="skills-row">
             <!-- Tech Skills -->
             <div class="skills-container">
               <h3 class="sidebar-title">Tech Skills</h3>
 
               <ul class="sidebar-list">
-                <li>HTML5</li>
-                <li>CSS3</li>
+                <li>HTML5 / CSS3</li>
                 <li>JavaScript</li>
-                <li>Version Control/Git</li>
+                <li>React JS</li>
+                <li>Redux</li>
+                <li>API Integration (Axios)</li>
+                <li>Version Control (Git)</li>
                 <li>Responsive Design</li>
-                <li>Browser Developer Tools</li>
               </ul>
             </div>
 
@@ -164,6 +348,90 @@
                 <li>Time Management</li>
                 <li>Adaptability</li>
                 <li>Creativity</li>
+                <li>Curiosity</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Sidebar (Ukrainian version) -->
+      <aside class="sidebar ukr">
+        <!-- Contacts -->
+        <div class="contacts-wrapper">
+          <img
+            src="./img/photo.jpg"
+            alt="моє фото"
+            width="370px"
+            class="my-photo"
+          />
+          <div class="contacts-container">
+            <h3 class="sidebar-title">Контакти</h3>
+
+            <p class="contacts-item">
+              <span class="contacts-type black">
+                <i class="fas fa-phone-alt"></i>
+              </span>
+              <a href="tel:+380635476034" class="contacts-email">
+                +38 063 547 60 34
+              </a>
+            </p>
+            <p class="contacts-item">
+              <span class="contacts-type black">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <a href="mailto:o.o.prokopchuk@gmail.com" class="contacts-email">
+                o.o.prokopchuk@gmail.com
+              </a>
+            </p>
+            <p class="contacts-item">
+              <span class="contacts-type">
+                <i class="fab fa-telegram"></i>
+              </span>
+              <a href="https://t.me/o_O_Prokopchuk" class="contacts-email">
+                t.me/o_O_Prokopchuk
+              </a>
+            </p>
+
+            <p class="contacts-item">
+              <span class="contacts-type">
+                <i class="fab fa-github"></i>
+              </span>
+              <a href="https://github.com/LaikaMirklis" class="contacts-email">
+                github.com/LaikaMirklis
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div class="sidebar-content">
+          <div class="skills-row">
+            <!-- Tech Skills -->
+            <div class="skills-container">
+              <h3 class="sidebar-title">Технічні навички</h3>
+
+              <ul class="sidebar-list">
+                <li>HTML5 / CSS3</li>
+                <li>JavaScript</li>
+                <li>React JS</li>
+                <li>Redux</li>
+                <li>API інтеграція (Axios)</li>
+                <li>Контроль версій (Git)</li>
+                <li>Адаптивний дизайн</li>
+              </ul>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="skills-container">
+              <h3 class="sidebar-title">Особисті навички</h3>
+
+              <ul class="sidebar-list">
+                <li>Вирішення проблем</li>
+                <li>Увага до деталей</li>
+                <li>Управління часом</li>
+                <li>Адаптивність</li>
+                <li>Креативність</li>
+                <li>Допитливість</li>
               </ul>
             </div>
           </div>
@@ -171,4 +439,28 @@
       </aside>
     </div>
   </body>
+  <script>
+    const switcher = document.querySelector('.switcher');
+
+    const mainContentEng = document.querySelector('.main-content.eng');
+    const sidebarEng = document.querySelector('.sidebar.eng');
+    const mainContentUkr = document.querySelector('.main-content.ukr');
+    const sidebarUkr = document.querySelector('.sidebar.ukr');
+
+    switcher.addEventListener('change', function () {
+      if (this.checked) {
+        mainContentEng.classList.add('hidden');
+        sidebarEng.classList.add('hidden');
+
+        mainContentUkr.classList.remove('hidden');
+        sidebarUkr.classList.remove('hidden');
+      } else {
+        mainContentEng.classList.remove('hidden');
+        sidebarEng.classList.remove('hidden');
+
+        mainContentUkr.classList.add('hidden');
+        sidebarUkr.classList.add('hidden');
+      }
+    });
+  </script>
 </html>

@@ -1,11 +1,12 @@
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: #e5e5e5;
   padding: 40px;
 }
 
 .wrapper {
   display: flex;
+
   flex-shrink: 0;
   flex-direction: row-reverse;
   background-color: #ffffff;
@@ -14,9 +15,61 @@ body {
   margin: 0 auto;
 }
 
+.main-content-wrapper {
+  position: relative;
+}
+
+/* Language switcher */
+.language-switcher {
+  position: absolute;
+  color: #595959;
+  right: 0;
+  margin: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.switcher {
+  position: relative;
+  width: 30px;
+  cursor: pointer;
+}
+
+.switcher::before {
+  position: absolute;
+  content: '';
+  width: 25px;
+  height: 15px;
+  background: #595959;
+  border-radius: 25px;
+}
+
+.switcher:checked::before {
+  background: #6d9bf5;
+}
+
+.switcher::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 25px;
+  transition: 0.25%;
+  border: 2px solid #595959;
+  box-sizing: border-box;
+}
+
+.switcher:checked::after {
+  left: 12px;
+  border: 2px solid #6d9bf5;
+}
+
 /* Main content */
 .main-content {
-  padding: 88px;
+  padding: 40px 40px 40px 36px;
 }
 
 .main-content-title {
@@ -32,20 +85,18 @@ body {
 .my-profession {
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 16px;
   color: #000000;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin: 0 0 18px 0;
+  margin: 0 0 16px 0;
 }
 
 .my-name {
   font-style: normal;
   font-weight: 700;
-  font-size: 45px;
-  line-height: 55px;
+  font-size: 36px;
   color: #000000;
-  margin: 0 0 28px 0;
+  margin: 0 0 16px 0;
 }
 
 .my-descr {
@@ -54,11 +105,12 @@ body {
   font-size: 14px;
   line-height: 24px;
   color: #595959;
-  width: 525px;
+  text-align: justify;
+  /* width: 525px; */
 }
 
 .about-me-container {
-  margin-bottom: 64px;
+  margin-bottom: 32px;
 }
 
 /* My projects */
@@ -66,9 +118,9 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.5;
   color: #6d9bf5;
-  margin: 12px 0 12px 0;
+  margin: 12px 0 8px 0;
 }
 
 .project-description {
@@ -82,8 +134,9 @@ body {
   font-size: 14px;
   line-height: 24px;
   color: #595959;
-  padding-left: 12px;
-  margin-left: 16px;
+  margin-left: 28px;
+  text-align: justify;
+  padding-bottom: 4px;
 }
 
 .project-description li a {
@@ -99,7 +152,7 @@ body {
 }
 
 .projects-container {
-  margin-bottom: 44px;
+  margin-bottom: 32px;
 }
 
 /* Education */
@@ -108,7 +161,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #6d9bf5;
-  margin: 12px 0 12px 0;
+  margin: 12px 0 8px 0;
 }
 
 .education-specialty {
@@ -134,10 +187,6 @@ body {
   margin: 0;
 }
 
-.my-photo {
-  margin-top: 40px;
-}
-
 .sidebar-content {
   padding: 0;
   margin: 0;
@@ -145,7 +194,7 @@ body {
 
 .contacts-container,
 .skills-container {
-  margin: 48px 0 0 40px;
+  margin: 28px 0 0 40px;
 }
 
 .sidebar-title {
@@ -159,34 +208,68 @@ body {
 
 /* Contacts container */
 .contacts-item {
+  /* position: relative; */
   margin: 0;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.contacts-type {
+  background-color: #ffffff;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  border: 2px solid #161d2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts-type.black {
+  background-color: #161d2a;
+}
+
+.fa-phone-alt {
+  font-size: 13px;
+  color: #ffffff;
+}
+.fa-envelope {
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.fa-telegram {
+  font-size: 20px;
+}
+
+.fa-github {
+  font-size: 20px;
 }
 
 .contacts-type {
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 24px;
-  margin-right: 8px;
+  color: #161d2a;
 }
 
 .contacts-number {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
   line-height: 24px;
-  color: #161d2a;
-  margin-right: 8px;
+  color: #2979ff;
+  margin-left: 8px;
   text-decoration: none;
 }
 
 .contacts-email {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
   line-height: 24px;
   color: #2979ff;
-  margin-right: 8px;
+  margin-left: 8px;
+  text-decoration: none;
 }
 
 /* Tech  & Soft skills containers */
@@ -218,21 +301,33 @@ body {
 }
 
 /* Adaptive size */
-@media screen and (max-width: 1270px) {
+@media screen and (max-width: 1296px) {
   .wrapper {
     width: 100%;
   }
   .my-descr {
     width: 100%;
   }
+  .language-switcher {
+    margin: 20px;
+  }
 }
 
-@media screen and (max-width: 995px) {
+@media screen and (max-width: 1035px) {
   .main-content {
-    padding: 40px;
+    padding: 56px 36px 36px 24px;
   }
+
+  .contacts-container,
+  .skills-container {
+    margin-left: 36px;
+  }
+
   .my-photo {
     width: 275px;
+  }
+  .language-switcher {
+    margin: 20px;
   }
 }
 
@@ -240,32 +335,55 @@ body {
   .wrapper {
     flex-direction: column-reverse;
   }
+
+  .language-switcher {
+    margin: 24px;
+  }
+
+  .main-content {
+    padding: 24px;
+  }
+
   .sidebar {
+    position: relative;
     display: flex;
     align-items: flex-start;
-    padding: 20px 20px 0 20px;
+    justify-content: center;
+    padding: 24px 24px 0 24px;
   }
   .sidebar-content {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
   }
+
+  .contacts-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .my-photo {
     margin: 0;
+    width: 275px;
+    margin-right: 16px;
   }
-  .contacts-container,
+
+  .contacts-container {
+    margin: 8px 0 20px 0;
+  }
+
   .skills-container {
     margin: 0 0 20px 20px;
   }
+
   .sidebar-title {
-    margin: 0 0 0 10px;
-  }
-  .skills-row {
-    display: flex;
-    flex-direction: row;
+    margin: 0 0 8px 0;
   }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 688px) {
   body {
     padding: 0;
   }
@@ -274,23 +392,22 @@ body {
     align-items: center;
   }
   .my-photo {
-    margin-bottom: 20px;
+    margin: 0 0 16px 0;
     width: 350px;
   }
+
+  .contacts-wrapper,
   .sidebar-content {
     flex-direction: column;
-    align-items: center;
+    width: 350px;
+  }
+
+  .contacts-container,
+  .skills-container {
+    margin: 0 0 16px 0;
   }
 }
 
-@media screen and (max-width: 480px) {
-  .main-content {
-    padding: 40px 16px 40px 16px;
-  }
-  .skills-row {
-    flex-direction: column;
-  }
-  .sidebar-content {
-    align-items: flex-start;
-  }
+.hidden {
+  display: none;
 }
