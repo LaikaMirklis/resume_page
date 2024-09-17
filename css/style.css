@@ -351,6 +351,7 @@ body {
     justify-content: center;
     padding: 24px 24px 0 24px;
   }
+
   .sidebar-content {
     display: flex;
     flex-wrap: wrap;
@@ -371,7 +372,7 @@ body {
   }
 
   .contacts-container {
-    margin: 8px 0 20px 0;
+    margin: 12px 0 20px 0;
   }
 
   .skills-container {
@@ -387,24 +388,47 @@ body {
   body {
     padding: 0;
   }
+
   .sidebar {
     flex-direction: column;
     align-items: center;
-  }
-  .my-photo {
-    margin: 0 0 16px 0;
-    width: 350px;
   }
 
   .contacts-wrapper,
   .sidebar-content {
     flex-direction: column;
-    width: 350px;
+    align-items: center;
+    width: 300px;
+  }
+
+  .my-photo {
+    margin: 0 0 16px 0;
+    width: 275px;
+    align-self: center;
   }
 
   .contacts-container,
   .skills-container {
     margin: 0 0 16px 0;
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    align-items: flex-start;
+  }
+
+  .main-content {
+    padding-top: 56px;
+  }
+}
+
+@media screen and (max-width: 364px) {
+  .my-photo {
+    width: 76vw;
+  }
+
+  .contacts-wrapper,
+  .sidebar-content {
+    width: 80vw;
   }
 }
 
