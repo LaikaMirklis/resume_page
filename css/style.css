@@ -32,8 +32,11 @@ body {
 
 .switcher {
   position: relative;
-  width: 30px;
+  width: 25px;
   cursor: pointer;
+  visibility: hidden;
+  margin: 0 8px;
+  padding: 0;
 }
 
 .switcher::before {
@@ -41,12 +44,14 @@ body {
   content: '';
   width: 25px;
   height: 15px;
-  background: #595959;
+  background-color: #595959;
   border-radius: 25px;
+  visibility: visible;
+  transition: background-color 0.5s ease;
 }
 
 .switcher:checked::before {
-  background: #6d9bf5;
+  background-color: #6d9bf5;
 }
 
 .switcher::after {
@@ -55,11 +60,12 @@ body {
   left: 0px;
   width: 15px;
   height: 15px;
-  background: #fff;
+  background-color: #fff;
   border-radius: 25px;
-  transition: 0.25%;
   border: 2px solid #595959;
   box-sizing: border-box;
+  visibility: visible;
+  transition: border 0.5s ease;
 }
 
 .switcher:checked::after {
@@ -183,7 +189,7 @@ body {
 
 /* Sidebar */
 .sidebar {
-  background: #e0ebfe;
+  background-color: #e0ebfe;
   margin: 0;
 }
 
